@@ -1,0 +1,146 @@
+body{
+
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:url("bg2.png");
+background-size:cover;
+background-position:center;
+
+font-family:Poppins;
+
+}
+
+/* Forgot password hidden initially */
+
+#forgot-form{
+display:none;
+margin-top:20px;
+}
+
+#forgot-form p{
+margin-top:10px;
+text-align:center;
+}
+
+
+/* Glass Box */
+
+.glass-container{
+
+width:350px;
+max-height:90vh;
+overflow-y:auto;
+
+padding:30px;
+
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(12px);
+
+border-radius:20px;
+
+box-shadow:0 10px 40px rgba(0,0,0,0.2);
+
+text-align:center;
+
+}
+
+/* Logo */
+
+.logo{
+
+width:80px;
+margin-bottom:10px;
+
+}
+
+h2{
+
+color:white;
+
+}
+
+/* Inputs */
+
+input{
+
+width:100%;
+padding:10px;
+margin:8px 0;
+
+border:none;
+border-radius:8px;
+
+}
+
+/* Password icon */
+
+.password-box{
+
+position:relative;
+
+}
+
+.password-box span{
+
+position:absolute;
+right:10px;
+top:15px;
+cursor:pointer;
+
+}
+
+/* Button */
+
+button{
+
+width:100%;
+padding:10px;
+
+background:#0072ff;
+color:white;
+
+border:none;
+border-radius:8px;
+
+margin-top:8px;
+cursor:pointer;
+
+}
+
+form{
+width:100%;
+display:block;
+}
+
+/* Links */
+
+p{
+
+color:white;
+font-size:14px;
+
+}
+
+a{
+
+color:#00e5ff;
+text-decoration:none;
+
+}
+
+/* Signup hidden initially */
+
+#signup-form{
+display:none;
+width:100%;
+
+}
+
+#nu {
+    color: black;
+    font-size: medium;
+}
