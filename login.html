@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Login - Choti Dukaan Finder</title>
+
+<link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+<div class="glass-container">
+
+<img src="lg 2.png" class="logo">
+
+<h2>Choti Dukaan Finder</h2>
+
+
+<!-- LOGIN FORM -->
+
+<form id="login-form" action="index.html">
+
+<h3>Login</h3>
+
+<input type="email" placeholder="Email" required>
+
+<input type="tel" placeholder="91-xxxxxxxxxx" pattern="[0-9]{10}" maxlength="10" required>
+
+<div class="password-box">
+
+<input 
+type="password" 
+id="loginPassword" 
+placeholder="Password"
+pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}"
+title="Password must contain at least 8 characters, one uppercase, one lowercase, one number and one special character"
+required>
+
+<span onclick="togglePassword('loginPassword')">👁</span>
+
+</div>
+
+<p>
+<a href="#" onclick="showForgot()">Forgot Password?</a>
+</p>
+
+<button type="submit">Login</button>
+
+<p>
+
+New user? <a href="#" onclick="showSignup()">Sign Up</a>
+</p>
+
+</form>
+
+<div id="forgot-form">
+
+<h3>Forgot Password</h3>
+
+<input 
+type="email"
+id="resetEmail"
+placeholder="Enter your registered email"
+required>
+
+<button type="button" onclick="resetPassword()">Send Reset Link</button>
+
+<!-- OTP SECTION -->
+<div id="resetOtpSection" style="display:none;">
+
+<input 
+type="text"
+id="resetOtp"
+placeholder="Enter OTP"
+maxlength="6"
+pattern="[0-9]{6}">
+
+<button type="button" onclick="verifyResetOTP()">Verify OTP</button>
+
+</div>
+
+<p>
+<a href="#" onclick="showLogin()">Back to Login</a>
+</p>
+
+<p>
+New user? <a href="#" onclick="showSignup()">Sign Up</a>
+</p>
+
+</div>
+
+<!-- SIGNUP FORM -->
+
+<form id="signup-form">
+
+<h3>Create Account</h3>
+
+<input 
+type="text"
+placeholder="Full Name"
+pattern="[A-Za-z ]{3,30}"
+title="Name should contain only letters and spaces"
+autocomplete="name"
+required>
+
+<input type="email" placeholder="Email" required>
+<button type="button" onclick="sendEmailOTP()">Send OTP</button>
+
+<input 
+type="text"
+id="emailOtp"
+placeholder="Enter Email OTP"
+maxlength="6"
+pattern="[0-9]{6}"
+required>
+
+<button type="button" onclick="verifyEmailOTP()">Verify OTP</button>
+
+<input type="tel" placeholder="91-xxxxxxxxxx" pattern="[0-9]{10}" maxlength="10" required>
+
+
+<button type="button" onclick="sendOTP()">Send OTP</button>
+
+<input 
+type="text" 
+id="otp" 
+placeholder="Enter OTP"
+pattern="[0-9]{6}"
+maxlength="6"
+required>
+
+<button type="button" onclick="verifyOTP()">Verify OTP</button>
+
+<div class="password-box">
+
+<input 
+type="password" 
+id="signupPassword" 
+placeholder="Create Password"
+pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}"
+title="Password must contain at least 8 characters, one uppercase, one lowercase, one number and one special character"
+required>
+
+<span onclick="togglePassword('signupPassword')">👁</span>
+
+</div>
+
+<div class="password-box">
+
+<input 
+type="password" 
+id="confirmPassword" 
+placeholder="Confirm Password" 
+required>
+
+<span onclick="togglePassword('confirmPassword')">👁</span>
+
+</div>
+
+<button type="submit">Sign Up</button>
+
+<p>
+Already registered?
+<a href="#" onclick="showLogin()">Login</a>
+</p>
+
+</form>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>
