@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Choti Dukaan Finder</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🛍️ Choti Dukaan Finder</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Categories</a>
+<a href="#">Shops</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<h2>Discover Nearby Local Shops</h2>
+
+<p>Support Small Vendors Around You ❤️</p>
+
+<button class="explore-btn">Explore Shops</button>
+
+</section>
+
+
+<!-- SHOP CATEGORIES -->
+
+<section class="categories">
+
+<h2>Shop Categories</h2>
+
+<div class="category-container">
+
+<div class="category">
+<img src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a">
+<p>Kirana Store</p>
+</div>
+
+<div class="category">
+<img src="https://images.unsplash.com/photo-1579113800032-c38bd7635818">
+<p>Fruit & Vegetable</p>
+</div>
+
+<div class="category">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+<p>Tea Stall</p>
+</div>
+
+<div class="category">
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+<p>Street Food</p>
+</div>
+
+<div class="category">
+<img src="https://i.pinimg.com/originals/02/2e/96/022e9691c5ba65d23cbf27a53f83163e.jpg">
+<p>Medical Store</p>
+</div>
+
+<div class="category">
+<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+<p>Salon</p>
+</div>
+
+<div class="category">
+<img src="https://images.unsplash.com/photo-1588072432836-e10032774350">
+<p>Stationery</p>
+</div>
+
+<div class="category">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<p>Mobile Shop</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="categories">
+
+<h2>Shop Categories</h2>
+
+<div class="category-container">
+
+<button class="category-btn" onclick="showTypes('kirana')">🛒 Kirana Store</button>
+
+<button class="category-btn" onclick="showTypes('fruit')">🍎 Fruit & Vegetable</button>
+
+<button class="category-btn" onclick="showTypes('tea')">☕ Tea Stall</button>
+
+<button class="category-btn" onclick="showTypes('food')">🍽️ Street Food</button>
+
+<button class="category-btn" onclick="showTypes('medical')">💊 Medical Store</button>
+
+<button class="category-btn" onclick="showTypes('salon')">💇 Salon</button>
+
+<button class="category-btn" onclick="showTypes('stationery')">📚 Stationery</button>
+
+<button class="category-btn" onclick="showTypes('mobile')">📱 Mobile Shop</button>
+
+</div>
+
+</section>
+
+
+<section class="types-section">
+
+<h2>Vendor Type</h2>
+
+<div id="typeContainer"></div>
+
+</section>
+
+<h3 id="selectedVendor"></h3>
+
+</section>
+
+
+<!-- POPULAR SHOPS -->
+
+<section class="shops">
+
+<h2>Popular Shops</h2>
+
+<div class="shop-container">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+
+<h3>Tea Stall</h3>
+
+<p>Fresh chai everyday</p>
+
+<span>⭐ 4.6 | Local Market</span>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd">
+
+<h3>Food Corner</h3>
+
+<p>Tasty street food</p>
+
+<span>⭐ 4.7 | Street Market</span>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1579113800032-c38bd7635818">
+
+<h3>Fruit Shop</h3>
+
+<p>Healthy fresh fruits</p>
+
+<span>⭐ 4.8 | Nearby Vendor</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Choti Dukaan Finder</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
